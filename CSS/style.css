@@ -24,6 +24,10 @@ header{
     border-bottom: solid 1px #fff;
 }
 
+a{
+    color: white;
+}
+
 header nav {
     display: flex;
     justify-content: space-between;
