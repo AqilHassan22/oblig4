@@ -18,10 +18,12 @@ header, main, footer{
 header{
     display: grid;
     grid-area: header; 
-    background-color: #370658;
+    background-color: #000000;
     font-size: 1.5rem;
     font-weight: 600;
+    border-bottom: solid 1px #fff;
 }
+
 header nav {
     display: flex;
     justify-content: space-between;
