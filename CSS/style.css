@@ -15,6 +15,10 @@ header, main, footer{
     padding: 1rem;
 }
 
+a{
+    color: white;
+}
+
 header{
     display: grid;
     grid-area: header; 
@@ -108,6 +112,7 @@ main{
 
 .content-frame h2{
     margin: 0;
+    color: white;
 }
 
 .pc-section img{
