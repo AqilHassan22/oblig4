@@ -1,0 +1,359 @@
+body{
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #370658;
+     color: white;
+}
+
+#grid.container {
+    display: grid;
+    grid-template-areas: "header header" "main" "footer";
+}
+
+header, main, footer{
+    padding: 1rem;
+}
+
+header{
+    display: grid;
+    grid-area: header; 
+    background-color: #370658;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+header nav div{
+    display: flex;
+    gap: 1rem;
+    color: white;
+}
+#logo{
+    text-decoration: none;
+    color: white;
+
+}
+
+.fa-chevron-left{
+    color: white;
+}
+
+#search-container{
+    position: relative;
+    display: inline block;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: wrap;
+    position: absolute;
+}
+
+.navbar li{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    font-size: 15px;
+}
+
+.responsive{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+}
+
+.responsive a{
+    display: inline-block;
+    padding: 1rem; 
+    text-decoration: none;
+}
+
+main{
+    display: grid;
+    grid-area: auto;
+}
+
+.pc-section{
+    background-color: #370658;
+    color: #fff;
+    text-align: center;
+}
+
+.content-frame{
+    display: inline-block;
+    padding: 122px;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 96px;
+    background-color: black;
+}
+
+.content-frame h2{
+    margin: 0;
+}
+
+.pc-section img{
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.image-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -19px;
+}
+
+
+.image-line img{
+    margin: 10px;
+    height: 224px;
+    width: 464px;
+    align-items: center;
+}
+
+.text-below{
+    display: flex;
+    flex-direction: row;
+}
+
+main section img{
+    width: 100%;
+}
+
+.sko-for-barn{
+    height: 50,967px;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    background-color: #202020;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1167px;
+}
+
+.bottom-navbar{
+    display: flex;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    letter-spacing: 73px;
+}
+
+.black-btn{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.purple-btn{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    border-color: white;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.add-btn{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    border-color: white;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.remove-btn{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: red;
+    color: #000000;
+    border-color: white;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.pay-btn{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: white;
+    color: #000000;
+    border-color: white;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+@media only screen and (min-width:600px){
+    #grid-container{
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+    
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+    }
+
+    body{
+        background-color: #370658;
+    }
+
+    .main{
+        background-color: black;
+    }
+
+    #ham, .fa-magnifying-glass, .fa-chevron-left{
+        display: none;  
+    }
+
+    .bottom-navbar{
+        display: none;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0.5;
+
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .flex-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .flex-section img{
+        width: 50%;
+        padding: 4rem
+    }
+
+    .flex-section section{
+        padding: 1rem;
+        width: 40%;
+        align-self: center;
+    }
+
+    .right img{
+        order:1;
+    }
+}  
+
+    @media only screen and (max-width:599px){
+
+    footer{
+        margin-top: 1179px;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    body{
+        background-color: #370658;
+    }
+
+    main{
+        background-color: #370658;
+    }
+
+    .pc-section{
+        padding: 4rem;
+    }
+
+    .bottom-navbar{
+        display: flex;
+        color: white;
+        align-content: center;
+        justify-content: center;
+        letter-spacing: 73px;
+        border: 2px white;
+    }
+
+    #search-bar{
+        display: none;
+    }
+
+    .image-line{
+        display: none;
+    }
+
+    .flex-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .content-frame{
+        display: inline-block;
+        padding: 108px;
+        border: 2px solid white;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: -38px;
+        background-color: black;
+    }
+
+}

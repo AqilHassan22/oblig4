@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Welcome to SportySneaks, the best place to buy sneakers">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="CSS/font/css/fontawesome.css" rel="stylesheet">
+        <link href="CSS/font/css/brands.css" rel="stylesheet">
+        <link href="CSS/font/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/style.css" type="text/css">
+        <title>SportySneaks</title>
+    </head>
+    <body>
+        <div id="grid-container">
+        <header>
+            <nav>
+                <a href="#" id="logo">SportySneaks</a>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produkt.html">Products</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Outlet</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="utsjekking.html">Cart</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="pc-section">
+                <a href="#" class="content-frame">
+                    <h2>SPECIAL AUTUMN SALE</h2>
+                    <h2>HUGE DISCOUNTS ON A VARIETY OF SHOES</h2>
+                </a>
+                <div class="image-line">
+                        <a href="#">
+                            <img src="img/sko-for-menn.jpg.png" alt="sko-for-menn">
+                            <img src="img/sko-for-kvinner.jpg.jpg" alt="sko-for-kvinner">
+                            <img src="img/sko-for-barn.jpg.jpeg" alt="sko-for-barn">
+                </div>
+        </main>
+        <hr id="seperator2" class="seperator">
+        <footer>
+            <nav>
+                <ul class="bottom-navbar">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-grip"></i></a></li>
+                    <li><a href="utsjekking.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-user-large"></i></a></li>
+                </ul>
+            </nav>
+        </footer>
+        </div>
+        <script>
+
+            let x = document.querySelector(".navbar")
+
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className += " responsive";                
+                } else {
+                    x.className = "navbar"
+                }
+            })
+
+        </script>
+    </body>
+</html>
+
+
+<!-----Kilder jeg har brukt er forelesningskoder, W3 Schools og Webtricks LMS----->

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Checkout these popular Nike Shoes for a 50% Discount.">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="CSS/font/css/fontawesome.css" rel="stylesheet">
+        <link href="CSS/font/css/brands.css" rel="stylesheet">
+        <link href="CSS/font/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/style.css" type="text/css">
+        <title>SportySneaks</title>
+    </head>
+    <body>
+        <div id="grid-container">
+        <header>
+            <nav>
+                <a href="#" id="logo">SportySneaks</a>
+                <div>
+                    <a href="index.html"><i class="fa-solid fa-chevron-left"></i></a>
+                </div>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produkt.html">Products</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Outlet</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="utsjekking.html">Cart</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="flex-section">
+                <img src="img/nikesko.jpg.jpg" alt="Nike Sko">
+                <section>
+                    <h2>Nike Running Shoes</h2>
+                    <i class="fa-solid fa-star"></i>
+                        <p>4.35 Rating * 2.3 Likes * 4,8k in wishlist</p>
+                    <h4>343,50 NOK</h4>
+                    <h4>Originally 687 -50%</h4>
+                </section>
+                <section class="buttons">
+                    <a class="black-btn" a href="#">Description</a>
+                        <p></p> 
+                    <a class="black-btn" a href="#">Details</a> 
+                </section>
+                <section>
+                    <a class="purple-btn" a href="#">Add to cart</a>
+                </section>
+        </main>
+        <hr id="seperator2" class="seperator">
+        <footer>
+            <nav>
+                <ul class="bottom-navbar">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-grip"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-user-large"></i></a></li>
+                </ul>
+            </nav>
+        </footer>
+        </div>
+        <script>
+
+            let x = document.querySelector(".navbar")
+
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className += " responsive";                
+                } else {
+                    x.className = "navbar"
+                }
+            })
+
+        </script>
+    </body>
+</html>
