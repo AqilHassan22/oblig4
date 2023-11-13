@@ -18,14 +18,14 @@
         <title>SportySneaks</title>
     </head>
     <body>
-        <a href="#main" class="skip">Skip to main content</a>
+        <a href="#main" class="skip" aria-label="Skip to main content">Skip to main content</a>
         <div id="grid-container">
         <header>
             <nav>
                 <a href="#" id="logo">SportySneaks</a>
                 <div>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i id="ham" class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+                    <i id="ham" class="fa-solid fa-bars" aria-label="Menu"></i>
                 </div>
                 <ul class="navbar">
                     <li><a href="index.html">Home</a></li>
@@ -44,13 +44,13 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="main-content" role="main">
             <section class="pc-section">
-                <a href="#" class="content-frame">
+                <a href="#" class="content-frame" aria-label="Content frame">
                     <h2>SPECIAL AUTUMN SALE</h2>
                     <h2>HUGE DISCOUNTS ON A VARIETY OF SHOES</h2>
                 </a>
-                <div class="image-line">
+                <div class="image-line" aria-label="Image line">
                         <a href="#">
                             <img src="img/sko-for-menn.jpg.png" alt="sko-for-menn">
                             <img src="img/sko-for-kvinner.jpg.jpg" alt="sko-for-kvinner">
@@ -60,7 +60,7 @@
         <hr id="seperator2" class="seperator">
         <footer>
             <nav>
-                <ul class="bottom-navbar">
+                <ul class="bottom-navbar" role="menubar" aria-label="Footer Navigation">
                     <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-grip"></i></a></li>
                     <li><a href="utsjekking.html"><i class="fa-solid fa-cart-shopping"></i></a></li>

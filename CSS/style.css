@@ -162,16 +162,16 @@ main section img{
     height: 50,967px;
 }
 
-.skip{
+.skip {
     position: absolute;
-    left: -10000px;
-    top: auto;
+    left: -999em;
+    top: -999em;
     width: 1px;
     height: 1px;
     overflow: hidden;
 }
 
-.skip:focus{
+.skip:focus {
     position: static;
     width: auto;
     height: auto;
