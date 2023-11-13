@@ -36,6 +36,10 @@ a{
     border: solid 1px white;
 }
 
+.ChatGPT{
+    border:solid 1px white;
+}
+
 .uu_comparison{
     border: solid 1px white;
 }
@@ -51,10 +55,10 @@ header nav div{
     gap: 1rem;
     color: white;
 }
-#logo{
+
+#link{
     text-decoration: none;
     color: white;
-
 }
 
 .fa-chevron-left{
