@@ -172,7 +172,8 @@ main section img{
 }
 
 .skip:focus {
-    position: static;
+    left: 0;
+    top: 0;
     width: auto;
     height: auto;
 }
