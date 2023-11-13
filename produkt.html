@@ -4,14 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Description" content="Checkout these popular Nike Shoes for a 50% Discount.">
+        <!---facebook metadata start-->
+        <meta property="og:title" content="Nike Shoes from SportySneaks ">
+        <meta property="og:url" content="https://schema.org/">
+        <meta property="og:description" content="Nike Running Shoes New Model">
+        <meta property="og:image" content="">
+        <!---facebook metadata slutt-->
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link href="CSS/font/css/fontawesome.css" rel="stylesheet">
         <link href="CSS/font/css/brands.css" rel="stylesheet">
         <link href="CSS/font/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="CSS/style.css" type="text/css">
-        <title>SportySneaks</title>
+        <title itemprop="name">SportySneaks</title>
     </head>
     <body>
+        <a href="#main" class="skip">Skip to main content</a>
         <div id="grid-container">
         <header>
             <nav>
@@ -36,15 +43,18 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main itemscope itemtype="https://schema.org/Product">
             <section class="flex-section">
-                <img src="img/nikesko.jpg.jpg" alt="Nike Sko">
-                <section>
-                    <h2>Nike Running Shoes</h2>
+                <img itemprop="image" src="img/nikesko.jpg.jpg" alt="Nike Sko">
+                <section itemprop="itemReviewed" itemscope itemtype="https://schema.org/Review">
+                    <meta itemprop="name" content="Nike Running Shoes Review">
+                    <h2 itemprop="name">Nike Running Shoes</h2>
                     <i class="fa-solid fa-star"></i>
-                        <p>4.35 Rating * 2.3 Likes * 4,8k in wishlist</p>
-                    <h4>343,50 NOK</h4>
-                    <h4>Originally 687 -50%</h4>
+                        <p itemprop="aggragateRating" itemscope itemtype="https://schema.org/AggregateRating"><span itemprop="ratingValue">Rating * 2.3 Likes * 4,8k in wishlist</span></p>
+                        <meta itemprop="priceCurrency" content="NOK">
+                    <h4 itemprop="price">343,50 NOK</h4>
+                    <h4 itemprop="price">Originally 687 NOK -50%</h4>
+                    <meta itemprop="author" content="Aqil Hassan">
                 </section>
                 <section class="buttons">
                     <a class="black-btn" a href="#">Description</a>
