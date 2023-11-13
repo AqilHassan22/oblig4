@@ -394,4 +394,12 @@ footer{
         background-color: black;
     }
 
+    #analyse{
+        display: none;
+    }
+
+    #form{
+        display: none;
+    }
+
 }
